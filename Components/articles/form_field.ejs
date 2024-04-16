@@ -1,0 +1,27 @@
+<div class="form-group m-2">
+    <label for="subject" class="display-6">Subject</label>
+    <input required type="text" name="subject" class="form-control border-2" placeholder="Enter your name here">
+</div>
+<div class="form-group m-2">
+    <label for="title" class="display-6">Title</label>
+    <input required type="text" name="title" class="form-control border-2" placeholder="Enter your topic title">
+</div>
+<div class="form-group m-2">
+    <label for="author" class="display-6">Name of the Author</label>
+    <input required type="text" class="form-control border-2" name="author" placeholder="Enter your name if you are the author">
+</div>
+<div class="form-group m-2">
+    <label for="description" class="display-6">Description</label>
+    <textarea required class="form-control border-2" name="description" placeholder="Enter your content here"></textarea>
+</div>
+<div class="form-group m-2">
+    <label for="createdAt" class="display-6">Date</label>
+    
+    <input required type="text" class="form-control border-2" name="createdAt" value="<%=(new Date).toLocaleString(); %>">
+</div>
+<div class="form-group m-2">
+    <label for="content" class="display-6">Content</label>
+    <textarea name="content" class="form-control border-2" id="" cols="30" rows="10"></textarea>
+</div>
+<a href="/" class="btn btn-secondary text-align-center m-4">Cancel</a>
+<button type="submit" class="btn btn-primary">Create Now</button>
