@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 const file = fileURLToPath(import.meta.url)
 const __dirname = dirname(file)
 
-mongoose.connect("mongodb://127.0.0.1:27017/Blogs").then(()=>console.log("Connected successfully"))
+mongoose.connect("mongodb+srv://samdanielselvirr:India_2023@cluster0.4iaig5o.mongodb.net/BlogWebsite").then(()=>console.log("Connected successfully"))
 app.set('view engine','ejs')
 app.get('/',async(req,res)=>{
     const articles = await model.find().sort({createdAt:'desc'})
